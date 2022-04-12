@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git Test</title>
+    <link rel="stylesheet" href="/path/to/styles/default.min.css">
     <style>
         body{
             margin: 2rem;
             padding: 2rem; 
+        }
+        p {
+            padding: 1rem;
+            margin: 1rem;
+            color: #802109;
         }
     </style>
 </head>
@@ -17,5 +23,41 @@
         Git Test for GitHub
     </h1>
 	<p>Hello World! This is Sachchidanand, a research scholar from IISER Kolkata</p>
+	<p>
+	<p>
+		This is again a test for git. Let us test.
+	</p>
+	<div class="git-code">
+		<p>
+			How to add something on git. We will understand this.
+		</p>
+		<pre>
+			<code class="language-html">
+				<!-- Check whether you have git installed or not -->
+				git --version
+				<!-- If you get something like git version X.Y.Z, then you have got installed -->
+				<!-- Configure git -->
+				git configure --global user.name "Your username"
+				git configure --global user.email "Your email"
+				<!-- to check the configuration -->
+				git config --global --list
+				
+				<!-- Now clone some repository into your computer and cd to that folder -->
+				<!-- git intialization -->
+				git init
+				<!-- add some file or folder to git -->
+				git add <file-name or folder-name>
+				<!-- check the status of added ile or folder -->
+				git status
+				<!-- commit changes -->
+				git commit -m "COMMENT TO DESCRIBE THE INTENTION OF THE COMMIT"
+				<!-- push the changes -->
+				git push
+			</code>
+		</pre>
+	</div>
+	
+	<script src="/path/to/highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
 </body>
 </html>
